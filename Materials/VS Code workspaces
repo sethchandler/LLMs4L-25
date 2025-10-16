@@ -1,0 +1,26 @@
+# Understanding VS Code Workspaces
+
+When you open Visual Studio Code, you might assume it can access any file on your computer. **It cannot.** VS Code can only read and write files in folders you've explicitly added to your **workspace**.
+
+## What Is a Workspace?
+
+A workspace is essentially a **permission list**. It tells VS Code (and its extensions) which folders they're allowed to touch. Everything else on your computer is off-limits. This protects your system from buggy or malicious extensions.
+
+Think of it as a security boundary, not just an organizational feature.
+
+## How to See Your Workspace
+
+Look at the **Explorer panel** on the left sidebar. The folders listed there (often under a section like "UNTITLED" or your project name) are your workspace. These are the only directories VS Code can access.
+
+## How to Modify Your Workspace
+
+**To add a folder:**
+- Right-click in the Explorer panel
+- Select "Add Folder to Workspace..."
+- Navigate to the folder and click "Add"
+
+**To remove a folder:**
+- Right-click the folder name in Explorer
+- Select "Remove Folder from Workspace"
+
+If extensions complain about "read-only" access or can't find files, you probably need to add the relevant folder to your workspace first.
